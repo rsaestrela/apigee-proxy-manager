@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "test",
+      "policies": [
+        {
+          "name": "AM-Set-Headers.xml",
+          "tokens": []
+        },
+        {
+          "name": "Quota.xml",
+          "tokens": []
+        },
+        {
+          "name": "Spike-Arrest.xml",
+          "tokens": []
+        },
+        {
+          "name": "Verify-API-Key.xml",
+          "tokens": []
+        }
+      ]
+    }
+  ]
+}

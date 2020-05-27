@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "name": "test",
+      "policies": [
+        {
+          "name": "add-cors.xml",
+          "tokens": [
+          ]
+        },
+        {
+          "name": "check-quota.xml",
+          "tokens": [
+          ]
+        }
+      ],
+      "proxies": [
+        {
+          "name": "default.xml",
+          "tokens": [
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "name": "default.xml",
+          "tokens": [
+          ]
+        }
+      ]
+    }
+  ]
+}
