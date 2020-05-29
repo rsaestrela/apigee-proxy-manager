@@ -8,6 +8,9 @@
     <properties>
         <main.basedir>${project.basedir}</main.basedir>
     </properties>
+    <modules>
+        <module>security</module>
+    </modules>
     <profiles>
         <profile>
             <id>deploy</id>
@@ -53,7 +56,7 @@
                                     <artifactItems>
                                         <artifactItem>
                                             <groupId>me.estrela</groupId>
-                                            <artifactId>common</artifactId>
+                                            <artifactId>common-resources</artifactId>
                                             <version>1.0</version>
                                             <type>jar</type>
                                             <overWrite>true</overWrite>

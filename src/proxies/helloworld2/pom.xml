@@ -2,13 +2,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>gateway</artifactId>
+        <artifactId>proxies</artifactId>
         <groupId>me.estrela</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>soap</artifactId>
+    <artifactId>helloworld2</artifactId>
     <version>1.0</version>
-    <name>soap</name>
+    <name>helloworld2</name>
     <packaging>pom</packaging>
 </project>
