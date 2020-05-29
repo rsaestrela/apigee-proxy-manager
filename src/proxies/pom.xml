@@ -7,6 +7,9 @@
     <version>1.0</version>
     <properties>
         <main.basedir>${project.basedir}</main.basedir>
+        <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+        <maven-dependency-plugin.version>2.8</maven-dependency-plugin.version>
+        <apigee-edge-maven-plugin.version>1.2.1</apigee-edge-maven-plugin.version>
     </properties>
     <modules>
         <module>helloworld</module>
@@ -17,7 +20,7 @@
         <dependency>
             <groupId>me.estrela</groupId>
             <artifactId>common-resources</artifactId>
-            <version>1.0</version>
+            <version>SNAPSHOT</version>
         </dependency>
     </dependencies>
     <profiles>
@@ -27,7 +30,7 @@
                 <plugins>
                     <plugin>
                         <artifactId>maven-resources-plugin</artifactId>
-                        <version>2.6</version>
+                        <version>${maven-resources-plugin.version}</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
@@ -50,6 +53,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
+                        <version>${maven-dependency-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>resource-dependencies</id>
@@ -77,7 +81,7 @@
                     <plugin>
                         <groupId>io.apigee.build-tools.enterprise4g</groupId>
                         <artifactId>apigee-edge-maven-plugin</artifactId>
-                        <version>1.2.1</version>
+                        <version>${apigee-edge-maven-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>configure-bundle</id>
@@ -107,6 +111,74 @@
                 <options>validate</options>
                 <apigee.profile>test</apigee.profile>
                 <apigee.env>test</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+                <apigee.options>${options}</apigee.options>
+            </properties>
+        </profile>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <org>raulestrela-eval</org>
+                <username>user</username>
+                <password>secretpassword</password>
+                <options>validate</options>
+                <apigee.profile>qa</apigee.profile>
+                <apigee.env>qa</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+                <apigee.options>${options}</apigee.options>
+            </properties>
+        </profile>
+        <profile>
+            <id>sandbox</id>
+            <properties>
+                <org>raulestrela-eval</org>
+                <username>user</username>
+                <password>secretpassword</password>
+                <options>validate</options>
+                <apigee.profile>sandbox</apigee.profile>
+                <apigee.env>sandbox</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+                <apigee.options>${options}</apigee.options>
+            </properties>
+        </profile>
+        <profile>
+            <id>demo</id>
+            <properties>
+                <org>raulestrela-eval</org>
+                <username>user</username>
+                <password>secretpassword</password>
+                <options>validate</options>
+                <apigee.profile>demo</apigee.profile>
+                <apigee.env>demo</apigee.env>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>${org}</apigee.org>
+                <apigee.username>${username}</apigee.username>
+                <apigee.password>${password}</apigee.password>
+                <apigee.options>${options}</apigee.options>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <org>raulestrela-eval</org>
+                <username>user</username>
+                <password>secretpassword</password>
+                <options>validate</options>
+                <apigee.profile>prod</apigee.profile>
+                <apigee.env>prod</apigee.env>
                 <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>${org}</apigee.org>

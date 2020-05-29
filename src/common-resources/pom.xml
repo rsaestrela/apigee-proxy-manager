@@ -4,7 +4,7 @@
     <groupId>me.estrela</groupId>
     <artifactId>common-resources</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>SNAPSHOT</version>
     <properties>
         <main.basedir>${project.basedir}</main.basedir>
     </properties>
