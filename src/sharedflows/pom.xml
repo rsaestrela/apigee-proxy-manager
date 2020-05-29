@@ -57,7 +57,7 @@
                                         <artifactItem>
                                             <groupId>me.estrela</groupId>
                                             <artifactId>common-resources</artifactId>
-                                            <version>1.0</version>
+                                            <version>SNAPSHOT</version>
                                             <type>jar</type>
                                             <overWrite>true</overWrite>
                                             <outputDirectory>${basedir}/target/sharedflowbundle</outputDirectory>
