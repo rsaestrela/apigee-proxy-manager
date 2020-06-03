@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: readmeio/github-readme-sync@1.0.0
+      - uses: readmeio/github-readme-sync@1.0.3
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           readme-api-id: ':oid:'
