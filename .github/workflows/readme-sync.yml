@@ -1,4 +1,4 @@
-name: Sync to ReadMe
+name: Sync Specs
 on: [push]
 jobs:
   build:
